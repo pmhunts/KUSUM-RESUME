@@ -1,0 +1,183 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.resume-container {
+  max-width: 900px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 30px 40px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #4a90e2;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.photo-placeholder {
+  width: 100px;
+  height: 100px;
+  background: #4a90e2;
+  color: white;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 30px;
+  user-select: none;
+  overflow: hidden;
+}
+
+.photo-initials {
+  font-size: 2.5rem;
+}
+
+.header-info {
+  flex: 1;
+}
+
+.name {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  color: #2c3e50;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #4a90e2;
+  margin-bottom: 8px;
+  letter-spacing: 1.5px;
+}
+
+.location-contact {
+  font-size: 1rem;
+  color: #666;
+}
+
+.icon {
+  font-size: 1.1rem;
+  vertical-align: middle;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #4a90e2;
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+  letter-spacing: 1.2px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills-list li {
+  background: #4a90e2;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  list-style-type: none;
+}
+
+.profile p {
+  font-size: 1rem;
+  color: #444;
+  text-align: justify;
+}
+
+.job, .education-item {
+  margin-bottom: 20px;
+}
+
+.job h3, .education-item h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 6px;
+}
+
+time {
+  display: block;
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.job ul, .education-item p {
+  font-size: 1rem;
+  color: #555;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .photo-placeholder {
+    margin-bottom: 15px;
+  }
+  .skills-list {
+    flex-direction: column;
+  }
+}
+
+/* PDF Download Button */
+#download-pdf-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(74, 144, 226, 0.4);
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+#download-pdf-btn:hover {
+  background-color: #357ABD;
+}
